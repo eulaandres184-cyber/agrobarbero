@@ -31,15 +31,26 @@ function filterMachinery(brand) {
     const cards = document.querySelectorAll('.machinery-card');
     const tabs = document.querySelectorAll('.brand-tab');
 
+    const activeClasses = {
+        all: ['bg-blue-600', 'text-white'],
+        agrometal: ['bg-amber-500', 'text-slate-950'],
+        mainero: ['bg-red-600', 'text-white'],
+        tbeh: ['bg-amber-500', 'text-slate-950'],
+        agrochery: ['bg-emerald-600', 'text-white']
+    };
+    const inactiveClasses = ['bg-white', 'text-slate-700', 'border', 'border-slate-200'];
+
     tabs.forEach(function (tab) {
-        tab.classList.remove('bg-amber-500', 'text-slate-950');
-        tab.classList.add('bg-slate-800', 'text-slate-300');
+        Object.values(activeClasses).forEach(function (classes) {
+            tab.classList.remove(...classes);
+        });
+        tab.classList.add(...inactiveClasses);
     });
 
     const activeTab = document.getElementById('tab-' + brand);
-    if (activeTab) {
-        activeTab.classList.remove('bg-slate-800', 'text-slate-300');
-        activeTab.classList.add('bg-amber-500', 'text-slate-950');
+    if (activeTab && activeClasses[brand]) {
+        activeTab.classList.remove(...inactiveClasses);
+        activeTab.classList.add(...activeClasses[brand]);
     }
 
     cards.forEach(function (card) {
