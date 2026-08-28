@@ -27,15 +27,33 @@ function toggleMobileMenu() {
     icon.classList.toggle('fa-xmark', isHidden);
 }
 
+function bindMachineryImageModalEvents() {
+    const images = document.querySelectorAll('.machinery-card img');
+
+    images.forEach(function (img) {
+        if (img.dataset.modalBound === 'true') {
+            return;
+        }
+
+        img.dataset.modalBound = 'true';
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function () {
+            const source = img.getAttribute('src');
+            const title = img.getAttribute('alt') || 'Vista ampliada de maquinaria';
+            openMachineryImageModal(source, title);
+        });
+    });
+}
+
 function filterMachinery(brand) {
     const cards = document.querySelectorAll('.machinery-card');
     const tabs = document.querySelectorAll('.brand-tab');
 
     const activeClasses = {
         all: ['bg-blue-600', 'text-white'],
-        agrometal: ['bg-amber-500', 'text-slate-950'],
+        agrometal: ['bg-amber-500', 'text-white'],
         mainero: ['bg-red-600', 'text-white'],
-        tbeh: ['bg-amber-500', 'text-slate-950'],
+        tbeh: ['bg-red-600', 'text-white'],
         agrochery: ['bg-emerald-600', 'text-white']
     };
     const inactiveClasses = ['bg-white', 'text-slate-700', 'border', 'border-slate-200'];
@@ -57,11 +75,15 @@ function filterMachinery(brand) {
         card.style.display = brand === 'all' || card.classList.contains('brand-' + brand) ? 'flex' : 'none';
     });
 
+    bindMachineryImageModalEvents();
+
     const machinerySection = document.getElementById('maquinaria');
     if (machinerySection) {
         machinerySection.scrollIntoView({ behavior: 'smooth' });
     }
 }
+
+bindMachineryImageModalEvents();
 
 function openQuoteModal(machineryName) {
     document.getElementById('modal-machinery-name').value = machineryName;
@@ -71,6 +93,20 @@ function openQuoteModal(machineryName) {
 
 function closeQuoteModal() {
     document.getElementById('quote-modal').classList.add('hidden');
+}
+
+function openMachineryImageModal(imageSrc, title) {
+    const modal = document.getElementById('machinery-image-modal');
+    const img = document.getElementById('machinery-image-preview');
+    const label = document.getElementById('machinery-image-title');
+
+    img.src = imageSrc;
+    label.textContent = title;
+    modal.classList.remove('hidden');
+}
+
+function closeMachineryImageModal() {
+    document.getElementById('machinery-image-modal').classList.add('hidden');
 }
 
 function handleModalSubmit(event) {

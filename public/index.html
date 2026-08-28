@@ -258,7 +258,7 @@
                         <span class="w-2.5 h-2.5 rounded-full bg-red-600 inline-block mr-1.5"></span> Mainero
                     </button>
                     <button onclick="filterMachinery('tbeh')" id="tab-tbeh" class="brand-tab flex items-center justify-center whitespace-nowrap px-3 py-2.5 rounded-xl font-bold text-[10px] sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all">
-                        <span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block mr-1.5"></span> TBeH
+                        <span class="w-2.5 h-2.5 rounded-full bg-red-600 inline-block mr-1.5"></span> TBeH
                     </button>
                     <button onclick="filterMachinery('agrochery')" id="tab-agrochery" class="brand-tab flex items-center justify-center whitespace-nowrap px-3 py-2.5 rounded-xl font-bold text-[10px] sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all">
                         <span class="w-2.5 h-2.5 rounded-full bg-emerald-600 inline-block mr-1.5"></span> AgroChery
@@ -272,7 +272,7 @@
                 <!-- Agrometal Card 1 -->
                 <div class="machinery-card brand-agrometal bg-white rounded-2xl border border-slate-200 hover:border-red-500/50 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
                     <div class="relative aspect-video img-container">
-                        <img src="https://images.unsplash.com/photo-1595246140625-573b715d11dc?q=80&w=800&auto=format&fit=crop" alt="Agrometal Sembradora" class="w-full h-full object-cover no-copy-img">
+                        <img src="https://images.unsplash.com/photo-1595246140625-573b715d11dc?q=80&w=800&auto=format&fit=crop" alt="Agrometal Sembradora" class="w-full h-full object-cover no-copy-img cursor-pointer" onclick="openMachineryImageModal('https://images.unsplash.com/photo-1595246140625-573b715d11dc?q=80&w=800&auto=format&fit=crop', 'TX Mega Gen 3 Precision Planting')">
                         <div class="img-protection-overlay"></div>
                         <div class="watermark-badge">AgroBarbero &bull; Agrometal</div>
                         <span class="absolute top-3 left-3 bg-red-600 text-white font-extrabold text-xs px-2.5 py-1 rounded-md tracking-wider">AGROMETAL</span>
@@ -297,7 +297,7 @@
                 <!-- Mainero Card 1 -->
                 <div class="machinery-card brand-mainero bg-white rounded-2xl border border-slate-200 hover:border-amber-500/50 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
                     <div class="relative aspect-video img-container">
-                        <img src="https://images.unsplash.com/photo-1530267981608-bc3413726059?q=80&w=800&auto=format&fit=crop" alt="Mainero Rotoenfardadora" class="w-full h-full object-cover no-copy-img">
+                        <img src="https://images.unsplash.com/photo-1530267981608-bc3413726059?q=80&w=800&auto=format&fit=crop" alt="Mainero Rotoenfardadora" class="w-full h-full object-cover no-copy-img cursor-pointer" onclick="openMachineryImageModal('https://images.unsplash.com/photo-1530267981608-bc3413726059?q=80&w=800&auto=format&fit=crop', 'Rotoenfardadora Mainero 5880')">
                         <div class="img-protection-overlay"></div>
                         <div class="watermark-badge">AgroBarbero &bull; Mainero</div>
                         <span class="absolute top-3 left-3 bg-amber-500 text-slate-950 font-extrabold text-xs px-2.5 py-1 rounded-md tracking-wider">MAINERO</span>
@@ -322,7 +322,7 @@
                 <!-- Mainero Card 2 -->
                 <div class="machinery-card brand-mainero bg-white rounded-2xl border border-slate-200 hover:border-amber-500/50 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
                     <div class="relative aspect-video img-container">
-                        <img src="https://images.unsplash.com/photo-1589876076276-0f31a29367d3?q=80&w=800&auto=format&fit=crop" alt="Mainero Mixer" class="w-full h-full object-cover no-copy-img">
+                        <img src="https://images.unsplash.com/photo-1589876076276-0f31a29367d3?q=80&w=800&auto=format&fit=crop" alt="Mainero Mixer" class="w-full h-full object-cover no-copy-img cursor-pointer" onclick="openMachineryImageModal('https://images.unsplash.com/photo-1589876076276-0f31a29367d3?q=80&w=800&auto=format&fit=crop', 'Mixer Vertical Mainero 2518')">
                         <div class="img-protection-overlay"></div>
                         <div class="watermark-badge">AgroBarbero &bull; Mainero</div>
                         <span class="absolute top-3 left-3 bg-amber-500 text-slate-950 font-extrabold text-xs px-2.5 py-1 rounded-md tracking-wider">MAINERO</span>
@@ -347,7 +347,7 @@
                 <!-- AgroChery Card 1 -->
                 <div class="machinery-card brand-agrochery bg-white rounded-2xl border border-slate-200 hover:border-blue-500/50 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
                     <div class="relative aspect-video img-container">
-                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=800&auto=format&fit=crop" alt="Tractor AgroChery" class="w-full h-full object-cover no-copy-img">
+                        <img src="img/chery.jpg" alt="Nueva Linea AgroChery, Tracto CHERY 1404M" class="w-full h-full object-cover no-copy-img cursor-pointer" onclick="openMachineryImageModal('img/chery.jpg', 'Nueva Linea AgroChery, Tracto CHERY 1404M')">
                         <div class="img-protection-overlay"></div>
                         <div class="watermark-badge">AgroBarbero &bull; AgroChery</div>
                         <span class="absolute top-3 left-3 bg-blue-600 text-white font-extrabold text-xs px-2.5 py-1 rounded-md tracking-wider">AGROCHERY</span>
@@ -355,14 +355,14 @@
                     <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
                         <div>
                             <span class="text-xs text-slate-500 font-medium">Tractor Agrícola 4x4</span>
-                            <h3 class="text-xl font-extrabold text-slate-900 mt-1">Tractor AgroChery RC 1404 C</h3>
+                            <h3 class="text-xl font-extrabold text-slate-900 mt-1">Nueva Linea AgroChery, CHERY 1404M</h3>
                             <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                                Potencia 140 HP, doble tracción, cabina panorámica con climatizador y doble salida hidráulica de centro abierto.
+                                Potencia 140 HP, cabina ergonómica, tracción confiable y tecnología pensada para trabajo continuo en campo.
                             </p>
                         </div>
                         <div class="pt-4 border-t border-slate-100 flex justify-between items-center">
                             <span class="text-xs font-semibold text-blue-600"><i class="fa-solid fa-shield-halved mr-1"></i> Garantía 2 Años</span>
-                            <button onclick="openQuoteModal('Tractor AgroChery RC 1404 C')" class="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs transition-colors shadow-sm">
+                            <button onclick="openQuoteModal('Nueva Linea AgroChery, Tracto CHERY 1404M')" class="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs transition-colors shadow-sm">
                                 Cotizar <i class="fa-solid fa-paper-plane ml-1"></i>
                             </button>
                         </div>
@@ -372,7 +372,7 @@
                 <!-- TBeH Card 1 -->
                 <div class="machinery-card brand-tbeh bg-white rounded-2xl border border-slate-200 hover:border-emerald-500/50 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
                     <div class="relative aspect-video img-container">
-                        <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?q=80&w=800&auto=format&fit=crop" alt="TBeH Pala de Arrastre" class="w-full h-full object-cover no-copy-img">
+                        <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?q=80&w=800&auto=format&fit=crop" alt="TBeH Pala de Arrastre" class="w-full h-full object-cover no-copy-img cursor-pointer" onclick="openMachineryImageModal('https://images.unsplash.com/photo-1574943320219-553eb213f72d?q=80&w=800&auto=format&fit=crop', 'Pala de Arrastre TBeH PA 2500')">
                         <div class="img-protection-overlay"></div>
                         <div class="watermark-badge">AgroBarbero &bull; TBeH</div>
                         <span class="absolute top-3 left-3 bg-emerald-600 text-white font-extrabold text-xs px-2.5 py-1 rounded-md tracking-wider">TBEH</span>
@@ -397,7 +397,7 @@
                 <!-- TBeH Card 2 -->
                 <div class="machinery-card brand-tbeh bg-white rounded-2xl border border-slate-200 hover:border-emerald-500/50 overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col">
                     <div class="relative aspect-video img-container">
-                        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=800&auto=format&fit=crop" alt="TBeH Desmalezadora" class="w-full h-full object-cover no-copy-img">
+                        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=800&auto=format&fit=crop" alt="TBeH Desmalezadora" class="w-full h-full object-cover no-copy-img cursor-pointer" onclick="openMachineryImageModal('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=800&auto=format&fit=crop', 'Desmalezadora TBeH DA 4500')">
                         <div class="img-protection-overlay"></div>
                         <div class="watermark-badge">AgroBarbero &bull; TBeH</div>
                         <span class="absolute top-3 left-3 bg-emerald-600 text-white font-extrabold text-xs px-2.5 py-1 rounded-md tracking-wider">TBEH</span>
@@ -801,22 +801,43 @@
         </div>
     </section>
 
-    <!-- Map Preview Placeholder / Embedded Stylized Card -->
+    <!-- Map Preview / Embedded Location -->
     <section class="bg-[#F5F5F5] py-12 border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-6">
-                <div class="flex items-center space-x-4">
-                    <div class="w-12 h-12 rounded-xl bg-red-50 text-red-600 flex items-center justify-center text-2xl shrink-0">
-                        <i class="fa-solid fa-map-location-dot"></i>
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 sm:p-6 border-b border-slate-200">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-red-50 text-red-600 flex items-center justify-center text-2xl shrink-0">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-base">¿Cómo Llegar a AgroBarbero SRL?</h4>
+                            <p class="text-xs text-slate-500">Huinca Renancó, Provincia de Córdoba &bull; RN35</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 text-base">¿Cómo Llegar a AgroBarbero SRL?</h4>
-                        <p class="text-xs text-slate-500">Huinca Renancó, Provincia de Córdoba &bull; RN35</p>
+                    <a href="https://maps.google.com/?cid=17850938079639657770" target="_blank" rel="noopener" class="px-6 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs border border-slate-300 transition-colors shrink-0 flex items-center gap-2">
+                        Abrir en Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+
+                <div class="relative h-[320px] sm:h-[420px] bg-slate-200">
+                    <iframe
+                        src="https://www.google.com/maps?q=Huinca+Renanc%C3%B3%2C+C%C3%B3rdoba%2C+Argentina&z=13&output=embed"
+                        class="absolute inset-0 w-full h-full border-0"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen>
+                    </iframe>
+
+                    <div class="absolute inset-0 pointer-events-none bg-gradient-to-t from-slate-900/10 via-transparent to-transparent"></div>
+
+                    <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+                        <div class="relative flex items-center justify-center">
+                            <div class="absolute -inset-3 rounded-full bg-red-500/20 blur-xl"></div>
+                            <img src="img/foto perfil insta blanco y negro.png" alt="Pin AgroBarbero" class="relative h-12 w-12 rounded-full border-2 border-white object-cover bg-white shadow-lg">
+                        </div>
                     </div>
                 </div>
-                <a href="https://maps.google.com/?cid=17850938079639657770" target="_blank" rel="noopener" class="px-6 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs border border-slate-300 transition-colors shrink-0 flex items-center gap-2">
-                    Abrir en Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                </a>
             </div>
         </div>
     </section>
@@ -891,6 +912,21 @@
             <i class="fa-solid fa-circle-arrow-up text-lg"></i>
             <span>Inicio</span>
         </button>
+    </div>
+
+    <!-- Machinery Image Modal -->
+    <div id="machinery-image-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="relative max-w-4xl w-full bg-slate-900 border border-slate-700 rounded-2xl shadow-2xl overflow-hidden">
+            <button onclick="closeMachineryImageModal()" class="absolute top-4 right-4 z-10 text-white/80 hover:text-white text-2xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="p-3 sm:p-4 border-b border-slate-700">
+                <h3 id="machinery-image-title" class="text-sm sm:text-base font-bold text-white text-center">Vista ampliada</h3>
+            </div>
+            <div class="p-3 sm:p-6">
+                <img id="machinery-image-preview" src="" alt="Vista ampliada de maquinaria" class="w-full max-h-[70vh] object-contain rounded-xl bg-slate-950">
+            </div>
+        </div>
     </div>
 
     <!-- Quote Modal -->

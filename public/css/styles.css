@@ -15,7 +15,6 @@ body {
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
-    pointer-events: none;
 }
 
 .img-container {
@@ -29,6 +28,11 @@ body {
     z-index: 10;
     background: rgba(0, 0, 0, 0.001);
     user-select: none;
+    pointer-events: none;
+}
+
+.machinery-card img {
+    cursor: pointer;
 }
 
 .watermark-badge {
