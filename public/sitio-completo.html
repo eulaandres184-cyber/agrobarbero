@@ -244,23 +244,26 @@
                 </p>
             </div>
 
-            <!-- Mobile-Optimized Horizontal Scroll Brand Filter Tabs -->
-            <div class="flex overflow-x-auto no-scrollbar gap-2 sm:gap-3 mb-8 sm:mb-12 pb-2 px-1 justify-start sm:justify-center" id="brand-tabs">
-                <button onclick="filterMachinery('all')" id="tab-all" class="brand-tab whitespace-nowrap px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-blue-600 text-white transition-all shadow-md shrink-0">
+            <!-- Brand Filter Tabs -->
+            <div class="flex flex-col gap-2 sm:gap-3 mb-8 sm:mb-12 pb-2 px-1" id="brand-tabs">
+                <button onclick="filterMachinery('all')" id="tab-all" class="brand-tab w-full flex items-center justify-center whitespace-nowrap px-4 py-3.5 rounded-xl font-black text-xs sm:text-sm bg-blue-600 text-white transition-all shadow-md">
                     Todas las Marcas
                 </button>
-                <button onclick="filterMachinery('agrometal')" id="tab-agrometal" class="brand-tab whitespace-nowrap px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all shrink-0">
-                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block mr-1.5"></span> Agrometal
-                </button>
-                <button onclick="filterMachinery('mainero')" id="tab-mainero" class="brand-tab whitespace-nowrap px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all shrink-0">
-                    <span class="w-2.5 h-2.5 rounded-full bg-red-600 inline-block mr-1.5"></span> Mainero
-                </button>
-                <button onclick="filterMachinery('tbeh')" id="tab-tbeh" class="brand-tab whitespace-nowrap px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all shrink-0">
-                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block mr-1.5"></span> TBeH
-                </button>
-                <button onclick="filterMachinery('agrochery')" id="tab-agrochery" class="brand-tab whitespace-nowrap px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all shrink-0">
-                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-600 inline-block mr-1.5"></span> AgroChery
-                </button>
+
+                <div class="grid grid-cols-2 gap-2 sm:gap-3">
+                    <button onclick="filterMachinery('agrometal')" id="tab-agrometal" class="brand-tab flex items-center justify-center whitespace-nowrap px-3 py-2.5 rounded-xl font-bold text-[10px] sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all">
+                        <span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block mr-1.5"></span> Agrometal
+                    </button>
+                    <button onclick="filterMachinery('mainero')" id="tab-mainero" class="brand-tab flex items-center justify-center whitespace-nowrap px-3 py-2.5 rounded-xl font-bold text-[10px] sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all">
+                        <span class="w-2.5 h-2.5 rounded-full bg-red-600 inline-block mr-1.5"></span> Mainero
+                    </button>
+                    <button onclick="filterMachinery('tbeh')" id="tab-tbeh" class="brand-tab flex items-center justify-center whitespace-nowrap px-3 py-2.5 rounded-xl font-bold text-[10px] sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all">
+                        <span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block mr-1.5"></span> TBeH
+                    </button>
+                    <button onclick="filterMachinery('agrochery')" id="tab-agrochery" class="brand-tab flex items-center justify-center whitespace-nowrap px-3 py-2.5 rounded-xl font-bold text-[10px] sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-600 inline-block mr-1.5"></span> AgroChery
+                    </button>
+                </div>
             </div>
 
             <!-- Machinery Grid Cards -->

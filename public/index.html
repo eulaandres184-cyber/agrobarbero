@@ -122,25 +122,25 @@
 
         <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="space-y-5 text-center">
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/30 text-white text-xs font-bold tracking-wide uppercase shadow-sm">
+                <!-- <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/30 text-white text-xs font-bold tracking-wide uppercase shadow-sm">
                     <i class="fa-solid fa-certificate"></i> Concesionario Oficial &bull; Huinca Renancó, Cba.
-                </div>
+                </div> -->
 
                 <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight tracking-tight">
                     Tecnología y Respaldo para el Campo Argentino
                 </h1>
 
                 <p class="text-white text-sm sm:text-lg max-w-2xl font-normal leading-relaxed mx-auto">
-                    Representantes oficiales de <strong class="text-white font-bold">Agrometal, Mainero, TBeH y AgroChery</strong>. Acompañamos al productor agropecuario con maquinaria de vanguardia, repuestos originales y servicio técnico en lote.
+                    Representantes oficiales <br><strong class="text-white font-bold">Agrometal, Mainero, TBeH y AgroChery</strong>. <br> Acompañamos al productor agropecuario con maquinaria de vanguardia, repuestos originales y servicio técnico en lote.
                 </p>
 
                 <!-- Brand Badges Bar -->
                 <div class="pt-6 border-t border-white/20 flex flex-wrap justify-center items-center gap-2 sm:gap-3">
                     <span class="text-[11px] font-bold text-white tracking-wider uppercase w-full">Marcas Líderes:</span>
-                    <span class="px-3 py-1 rounded-lg bg-white/10 text-white font-extrabold text-xs border border-white/30 shadow-sm">AGROMETAL</span>
-                    <span class="px-3 py-1 rounded-lg bg-white/10 text-white font-extrabold text-xs border border-white/30 shadow-sm">MAINERO</span>
-                    <span class="px-3 py-1 rounded-lg bg-white/10 text-white font-extrabold text-xs border border-white/30 shadow-sm">TBEH</span>
-                    <span class="px-3 py-1 rounded-lg bg-white/10 text-white font-extrabold text-xs border border-white/30 shadow-sm">AGROCHERY</span>
+                    <span class="px-3 py-1 rounded-lg bg-white/10 text-yellow-400 font-extrabold text-xs border border-yellow-300/40 shadow-sm">AGROMETAL</span>
+                    <span class="px-3 py-1 rounded-lg bg-white/10 text-red-500 font-extrabold text-xs border border-red-300/40 shadow-sm">MAINERO</span>
+                    <span class="px-3 py-1 rounded-lg bg-white/10 text-red-600 font-extrabold text-xs border border-red-300/40 shadow-sm">TBEH</span>
+                    <span class="px-3 py-1 rounded-lg bg-white/10 text-green-800 font-extrabold text-xs border border-green-900/50 shadow-sm">AGROCHERY</span>
                 </div>
             </div>
         </div>
@@ -244,23 +244,26 @@
                 </p>
             </div>
 
-            <!-- Mobile-Optimized Horizontal Scroll Brand Filter Tabs -->
-            <div class="flex overflow-x-auto no-scrollbar gap-2 sm:gap-3 mb-8 sm:mb-12 pb-2 px-1 justify-start sm:justify-center" id="brand-tabs">
-                <button onclick="filterMachinery('all')" id="tab-all" class="brand-tab whitespace-nowrap px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-blue-600 text-white transition-all shadow-md shrink-0">
+            <!-- Brand Filter Tabs -->
+            <div class="flex flex-col gap-2 sm:gap-3 mb-8 sm:mb-12 pb-2 px-1" id="brand-tabs">
+                <button onclick="filterMachinery('all')" id="tab-all" class="brand-tab w-full flex items-center justify-center whitespace-nowrap px-4 py-3.5 rounded-xl font-black text-xs sm:text-sm bg-blue-600 text-white transition-all shadow-md">
                     Todas las Marcas
                 </button>
-                <button onclick="filterMachinery('agrometal')" id="tab-agrometal" class="brand-tab whitespace-nowrap px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all shrink-0">
-                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block mr-1.5"></span> Agrometal
-                </button>
-                <button onclick="filterMachinery('mainero')" id="tab-mainero" class="brand-tab whitespace-nowrap px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all shrink-0">
-                    <span class="w-2.5 h-2.5 rounded-full bg-red-600 inline-block mr-1.5"></span> Mainero
-                </button>
-                <button onclick="filterMachinery('tbeh')" id="tab-tbeh" class="brand-tab whitespace-nowrap px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all shrink-0">
-                    <span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block mr-1.5"></span> TBeH
-                </button>
-                <button onclick="filterMachinery('agrochery')" id="tab-agrochery" class="brand-tab whitespace-nowrap px-4 sm:px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all shrink-0">
-                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-600 inline-block mr-1.5"></span> AgroChery
-                </button>
+
+                <div class="grid grid-cols-2 gap-2 sm:gap-3">
+                    <button onclick="filterMachinery('agrometal')" id="tab-agrometal" class="brand-tab flex items-center justify-center whitespace-nowrap px-3 py-2.5 rounded-xl font-bold text-[10px] sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all">
+                        <span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block mr-1.5"></span> Agrometal
+                    </button>
+                    <button onclick="filterMachinery('mainero')" id="tab-mainero" class="brand-tab flex items-center justify-center whitespace-nowrap px-3 py-2.5 rounded-xl font-bold text-[10px] sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all">
+                        <span class="w-2.5 h-2.5 rounded-full bg-red-600 inline-block mr-1.5"></span> Mainero
+                    </button>
+                    <button onclick="filterMachinery('tbeh')" id="tab-tbeh" class="brand-tab flex items-center justify-center whitespace-nowrap px-3 py-2.5 rounded-xl font-bold text-[10px] sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all">
+                        <span class="w-2.5 h-2.5 rounded-full bg-amber-500 inline-block mr-1.5"></span> TBeH
+                    </button>
+                    <button onclick="filterMachinery('agrochery')" id="tab-agrochery" class="brand-tab flex items-center justify-center whitespace-nowrap px-3 py-2.5 rounded-xl font-bold text-[10px] sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition-all">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-600 inline-block mr-1.5"></span> AgroChery
+                    </button>
+                </div>
             </div>
 
             <!-- Machinery Grid Cards -->
@@ -471,42 +474,7 @@
                     Proteja la vida útil de sus equipos utilizando exclusivamente componentes 100% originales para Agrometal, Mainero, TBeH y AgroChery.
                 </p>
             </div>
-
-            <!-- Spare Parts Feature Grid -->
-            <!-- <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:border-red-500/40 transition-all text-center shadow-sm hover:shadow-md">
-                    <div class="w-16 h-16 mx-auto rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl font-bold mb-4">
-                        <i class="fa-solid fa-boxes-stacked"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Stock Permanente</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">
-                        Mantenemos un amplio inventario de cuchillas, correas, rodamientos, mangueras hidráulicas, filtros y puntas de reja para despacho inmediato.
-                    </p>
-                </div>
-
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:border-red-500/40 transition-all text-center shadow-sm hover:shadow-md">
-                    <div class="w-16 h-16 mx-auto rounded-2xl bg-red-50 text-red-600 flex items-center justify-center text-2xl font-bold mb-4">
-                        <i class="fa-solid fa-certificate"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Calidad de Fábrica</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">
-                        Accesorios homologados directamente por las marcas. Ajuste perfecto y máxima durabilidad ante altas exigencias de trabajo.
-                    </p>
-                </div>
-
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:border-red-500/40 transition-all text-center shadow-sm hover:shadow-md">
-                    <div class="w-16 h-16 mx-auto rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl font-bold mb-4">
-                        <i class="fa-solid fa-truck-fast"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-2">Envíos a Lote</h3>
-                    <p class="text-xs text-slate-500 leading-relaxed">
-                        Logística express para entregar repuestos urgentes directamente en su campo o punto de trabajo en la región.
-                    </p>
-                </div> -->
-
-            </div>
-
+            
             <!-- Spare Part Consultation Form Card -->
             <div class="bg-white rounded-2xl p-6 sm:p-10 border border-slate-200 max-w-3xl mx-auto shadow-xl">
                 <h3 class="text-xl font-extrabold text-slate-900 text-center mb-2">
@@ -606,28 +574,11 @@
 
                     <div class="pt-2">
                         <a href="https://wa.me/542336493108?text=Hola%20AgroBarbero,%20necesito%20solicitar%20servicio%20t%C3%A9cnico%20para%20mi%20máquina." target="_blank" rel="noopener" class="inline-flex items-center px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm transition-all shadow-md shadow-emerald-600/20">
-                            <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Solicitar Turno Técnico Urgente
+                            <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Solicitar Turno Técnico
                         </a>
                     </div>
                 </div>
-
-                <!-- Protectable Service Image -->
-                <!-- div class="lg:col-span-6 relative">
-                    <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-xl img-container aspect-square max-w-lg mx-auto bg-white">
-                        <img src="https://images.unsplash.com/photo-1618042164219-62c820f10723?q=80&w=1000&auto=format&fit=crop" alt="Servicio Técnico AgroBarbero" class="w-full h-full object-cover no-copy-img">
-                        <div class="img-protection-overlay"></div>
-                        <div class="watermark-badge">AgroBarbero &bull; Servicio Oficial</div>
-                    </div>
-                    <div class="absolute -bottom-6 -left-6 bg-white border border-slate-200 p-4 rounded-2xl shadow-xl hidden sm:block">
-                        <div class="flex items-center space-x-3">
-                            <div class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></div>
-                            <span class="text-xs font-bold text-slate-800">Guardia de Asistencia en Cosecha</span>
-                        </div>
-                    </div>
-                </div> -->
-
             </div>
-
         </div>
     </section>
 
